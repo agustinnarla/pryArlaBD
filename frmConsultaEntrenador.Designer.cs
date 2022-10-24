@@ -35,10 +35,13 @@
             // grlEntrenador
             // 
             this.grlEntrenador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grlEntrenador.Location = new System.Drawing.Point(12, 11);
+            this.grlEntrenador.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grlEntrenador.Location = new System.Drawing.Point(0, 0);
             this.grlEntrenador.Name = "grlEntrenador";
-            this.grlEntrenador.Size = new System.Drawing.Size(776, 300);
+            this.grlEntrenador.ReadOnly = true;
+            this.grlEntrenador.Size = new System.Drawing.Size(800, 450);
             this.grlEntrenador.TabIndex = 0;
+            this.grlEntrenador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grlEntrenador_CellContentClick);
             // 
             // frmConsultaEntrenador
             // 
@@ -48,6 +51,7 @@
             this.Controls.Add(this.grlEntrenador);
             this.Name = "frmConsultaEntrenador";
             this.Text = "Consulta-Entrenador";
+            this.Load += new System.EventHandler(this.frmConsultaEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grlEntrenador)).EndInit();
             this.ResumeLayout(false);
 

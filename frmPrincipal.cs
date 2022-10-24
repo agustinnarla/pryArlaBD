@@ -59,5 +59,10 @@ namespace pryArlaBD
             frmConsultaEntrenador objConsultaEntrenador = new frmConsultaEntrenador();
             objConsultaEntrenador.ShowDialog();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

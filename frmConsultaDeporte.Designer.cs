@@ -35,10 +35,13 @@
             // grlDeportes
             // 
             this.grlDeportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grlDeportes.Location = new System.Drawing.Point(12, 11);
+            this.grlDeportes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grlDeportes.Location = new System.Drawing.Point(0, 0);
             this.grlDeportes.Name = "grlDeportes";
-            this.grlDeportes.Size = new System.Drawing.Size(776, 300);
+            this.grlDeportes.ReadOnly = true;
+            this.grlDeportes.Size = new System.Drawing.Size(800, 450);
             this.grlDeportes.TabIndex = 0;
+            this.grlDeportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grlDeportes_CellContentClick);
             // 
             // frmConsultaDeporte
             // 
@@ -48,6 +51,7 @@
             this.Controls.Add(this.grlDeportes);
             this.Name = "frmConsultaDeporte";
             this.Text = "Consulta-Deporte";
+            this.Load += new System.EventHandler(this.frmConsultaDeporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grlDeportes)).EndInit();
             this.ResumeLayout(false);
 

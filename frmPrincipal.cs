@@ -64,5 +64,34 @@ namespace pryArlaBD
         {
 
         }
+
+        private void deportistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistroDeportista objDeportista = new frmRegistroDeportista();
+            objDeportista.ShowDialog();
+        }
+
+        private void modifiarEliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificar_EliminarDeportista objModificar_Eliminar = new frmModificar_EliminarDeportista();
+            objModificar_Eliminar.ShowDialog();
+        }
+
+        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmRegistroEntrenador objRegistroEntrenador = new frmRegistroEntrenador();
+            objRegistroEntrenador.ShowDialog();
+        }
+
+        private void modificarEliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificar_EliminarEntrenador objModificarEliminarEntrenadro = new frmModificar_EliminarEntrenador();
+            objModificarEliminarEntrenadro.ShowDialog();
+        }
     }
 }

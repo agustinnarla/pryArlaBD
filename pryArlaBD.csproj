@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsDeportista.cs" />
+    <Compile Include="clsEntrenador.cs" />
     <Compile Include="frmConsultaDeporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +60,35 @@
     <Compile Include="frmConsultaEntrenador.Designer.cs">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificar-EliminarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificar-EliminarEntrenador.Designer.cs">
+      <DependentUpon>frmModificar-EliminarEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificar-EliminarDeportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificar-EliminarDeportista.Designer.cs">
+      <DependentUpon>frmModificar-EliminarDeportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroDeportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroDeportista.Designer.cs">
+      <DependentUpon>frmRegistroDeportista.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroEntrenador.Designer.cs">
+      <DependentUpon>frmRegistroEntrenador.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +98,20 @@
     <EmbeddedResource Include="frmConsultaEntrenador.resx">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificar-EliminarEntrenador.resx">
+      <DependentUpon>frmModificar-EliminarEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificar-EliminarDeportista.resx">
+      <DependentUpon>frmModificar-EliminarDeportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDeportista.resx">
+      <DependentUpon>frmRegistroDeportista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroEntrenador.resx">
+      <DependentUpon>frmRegistroEntrenador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

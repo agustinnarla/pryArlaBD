@@ -113,8 +113,8 @@ namespace pryArlaBD
         {
             try
             {
-                string varSentenciaSQL = "UPDATE DEPORTISTA SET NOMBRE = '" + varNombre + "', APELLIDO="  + varApellido + ",DIRECCION='" + varDireccion + "', TELEFONO=" + varTelefono + ", EDAD =" + varEdad + ",[DEPORTE=" + varDeportes + " WHERE ('" + varCodigoDeportista + "'= [CODIGO DEPORTISTA])";
-                
+                string varSentenciaSQL = "UPDATE DEPORTISTA SET NOMBRE= '" + varNombre + "',APELLIDO= '" + varApellido + "',DIRECCION= '" + varDireccion + "', TELEFONO=" + varTelefono + ", EDAD=" + varEdad + ", DEPORTE='" + varDeportes + "' WHERE [CODIGO DEPORTISTA] = '" + parCDeportista + "'";
+
 
                 //conectamos base de datos 
                 objConexion.ConnectionString = varRuta;
@@ -136,7 +136,9 @@ namespace pryArlaBD
                 MessageBox.Show(Mensajito.Message);
                 //throw;
             }
+           
         }
+
         public void Eliminar(string parCodigoDeportista)
         {
             try

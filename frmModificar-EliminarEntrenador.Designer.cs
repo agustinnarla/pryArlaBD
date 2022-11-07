@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.mrcDatos = new System.Windows.Forms.GroupBox();
-            this.lstProvincia = new System.Windows.Forms.ComboBox();
             this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.lblDeporte = new System.Windows.Forms.Label();
-            this.lblProvincia = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCodigoEntrendador = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblCodigoEntrendador = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.cmdConsultar = new System.Windows.Forms.Button();
             this.cmdEliminar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cmdModificar = new System.Windows.Forms.Button();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.txtProvincia = new System.Windows.Forms.TextBox();
             this.mrcDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcDatos
             // 
-            this.mrcDatos.Controls.Add(this.lstProvincia);
+            this.mrcDatos.Controls.Add(this.txtProvincia);
             this.mrcDatos.Controls.Add(this.lstDeporte);
             this.mrcDatos.Controls.Add(this.lblDeporte);
             this.mrcDatos.Controls.Add(this.lblProvincia);
@@ -62,46 +62,10 @@
             this.mrcDatos.Controls.Add(this.txtNombre);
             this.mrcDatos.Location = new System.Drawing.Point(12, 73);
             this.mrcDatos.Name = "mrcDatos";
-            this.mrcDatos.Size = new System.Drawing.Size(302, 219);
+            this.mrcDatos.Size = new System.Drawing.Size(302, 192);
             this.mrcDatos.TabIndex = 4;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "Datos";
-            // 
-            // lstProvincia
-            // 
-            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstProvincia.Enabled = false;
-            this.lstProvincia.FormattingEnabled = true;
-            this.lstProvincia.Items.AddRange(new object[] {
-            "",
-            "Buenos Aires",
-            "Ciudad Autónoma de Buenos Aires",
-            "Catamarca",
-            "Chaco",
-            "Chubut",
-            "Córdoba",
-            "Corrientes",
-            "Entre Ríos",
-            "Formosa",
-            "Jujuy",
-            "La Pampa",
-            "La Rioja",
-            "Mendoza",
-            "Misiones",
-            "Neuquén",
-            "Río Negro",
-            "Salta",
-            "San Juan",
-            "San Luis",
-            "Santa Cruz",
-            "Santa Fe",
-            "Santiago del Estero",
-            "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
-            "Tucumán"});
-            this.lstProvincia.Location = new System.Drawing.Point(130, 119);
-            this.lstProvincia.Name = "lstProvincia";
-            this.lstProvincia.Size = new System.Drawing.Size(147, 21);
-            this.lstProvincia.TabIndex = 15;
             // 
             // lstDeporte
             // 
@@ -117,7 +81,7 @@
             "ATLETISMO",
             "PADEL",
             "HANDBALL"});
-            this.lstDeporte.Location = new System.Drawing.Point(130, 151);
+            this.lstDeporte.Location = new System.Drawing.Point(130, 142);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(147, 21);
             this.lstDeporte.TabIndex = 14;
@@ -130,15 +94,6 @@
             this.lblDeporte.Size = new System.Drawing.Size(45, 13);
             this.lblDeporte.TabIndex = 11;
             this.lblDeporte.Text = "Deporte";
-            // 
-            // lblProvincia
-            // 
-            this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Location = new System.Drawing.Point(16, 114);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(54, 13);
-            this.lblProvincia.TabIndex = 9;
-            this.lblProvincia.Text = "Provincia ";
             // 
             // lblDireccion
             // 
@@ -167,15 +122,6 @@
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblCodigoEntrendador
-            // 
-            this.lblCodigoEntrendador.AutoSize = true;
-            this.lblCodigoEntrendador.Location = new System.Drawing.Point(28, 19);
-            this.lblCodigoEntrendador.Name = "lblCodigoEntrendador";
-            this.lblCodigoEntrendador.Size = new System.Drawing.Size(101, 13);
-            this.lblCodigoEntrendador.TabIndex = 5;
-            this.lblCodigoEntrendador.Text = "Codigo Entrendador";
-            // 
             // txtDireccion
             // 
             this.txtDireccion.Enabled = false;
@@ -200,6 +146,15 @@
             this.txtNombre.Size = new System.Drawing.Size(147, 20);
             this.txtNombre.TabIndex = 1;
             // 
+            // lblCodigoEntrendador
+            // 
+            this.lblCodigoEntrendador.AutoSize = true;
+            this.lblCodigoEntrendador.Location = new System.Drawing.Point(28, 19);
+            this.lblCodigoEntrendador.Name = "lblCodigoEntrendador";
+            this.lblCodigoEntrendador.Size = new System.Drawing.Size(101, 13);
+            this.lblCodigoEntrendador.TabIndex = 5;
+            this.lblCodigoEntrendador.Text = "Codigo Entrendador";
+            // 
             // txtCodigo
             // 
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -223,7 +178,7 @@
             // cmdEliminar
             // 
             this.cmdEliminar.Enabled = false;
-            this.cmdEliminar.Location = new System.Drawing.Point(26, 298);
+            this.cmdEliminar.Location = new System.Drawing.Point(37, 271);
             this.cmdEliminar.Name = "cmdEliminar";
             this.cmdEliminar.Size = new System.Drawing.Size(75, 30);
             this.cmdEliminar.TabIndex = 10;
@@ -233,7 +188,7 @@
             // 
             // cmdSalir
             // 
-            this.cmdSalir.Location = new System.Drawing.Point(214, 298);
+            this.cmdSalir.Location = new System.Drawing.Point(225, 271);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(75, 30);
             this.cmdSalir.TabIndex = 9;
@@ -243,7 +198,7 @@
             // cmdModificar
             // 
             this.cmdModificar.Enabled = false;
-            this.cmdModificar.Location = new System.Drawing.Point(120, 298);
+            this.cmdModificar.Location = new System.Drawing.Point(131, 271);
             this.cmdModificar.Name = "cmdModificar";
             this.cmdModificar.Size = new System.Drawing.Size(75, 30);
             this.cmdModificar.TabIndex = 8;
@@ -251,11 +206,28 @@
             this.cmdModificar.UseVisualStyleBackColor = true;
             this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
             // 
+            // lblProvincia
+            // 
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Location = new System.Drawing.Point(16, 114);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(54, 13);
+            this.lblProvincia.TabIndex = 9;
+            this.lblProvincia.Text = "Provincia ";
+            // 
+            // txtProvincia
+            // 
+            this.txtProvincia.Enabled = false;
+            this.txtProvincia.Location = new System.Drawing.Point(130, 114);
+            this.txtProvincia.Name = "txtProvincia";
+            this.txtProvincia.Size = new System.Drawing.Size(147, 20);
+            this.txtProvincia.TabIndex = 15;
+            // 
             // frmModificar_EliminarEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 348);
+            this.ClientSize = new System.Drawing.Size(340, 313);
             this.Controls.Add(this.cmdEliminar);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdModificar);
@@ -276,10 +248,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox mrcDatos;
-        private System.Windows.Forms.ComboBox lstProvincia;
         private System.Windows.Forms.ComboBox lstDeporte;
         private System.Windows.Forms.Label lblDeporte;
-        private System.Windows.Forms.Label lblProvincia;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblNombre;
@@ -292,5 +262,7 @@
         private System.Windows.Forms.Button cmdEliminar;
         private System.Windows.Forms.Button cmdSalir;
         private System.Windows.Forms.Button cmdModificar;
+        private System.Windows.Forms.TextBox txtProvincia;
+        private System.Windows.Forms.Label lblProvincia;
     }
 }

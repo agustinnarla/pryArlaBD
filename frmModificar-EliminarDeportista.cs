@@ -58,7 +58,16 @@ namespace pryArlaBD
         {
             string varCodigo = txtCodigo.Text;
             clsDeportista objDeportista = new clsDeportista();
+
             objDeportista.Modificar(varCodigo);
+            objDeportista.varNombre = txtNombre.Text;
+            objDeportista.varApellido = txtApellido.Text;
+            objDeportista.varDireccion = Convert.ToString(txtDireccion.Text);
+            objDeportista.varTelefono = Convert.ToInt32(txtTelefono.Text);
+            objDeportista.varEdad = Convert.ToInt32(txtEdad.Text);
+            objDeportista.varDeportes = Convert.ToString(lstDeporte.SelectedItem);
+            objDeportista.Modificar(varCodigo);
+
             MessageBox.Show("Deportista modificado");
             Limpiar();
             txtCodigo.Enabled = true;

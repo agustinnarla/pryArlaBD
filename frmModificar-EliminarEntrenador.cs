@@ -33,7 +33,7 @@ namespace pryArlaBD
                 txtNombre.Text = objEntrenador.varNombre;
                 txtApellido.Text = objEntrenador.varApellido;
                 txtDireccion.Text = objEntrenador.varDireccion;
-                lstProvincia.Text = objEntrenador.varProvincia;
+                txtProvincia.Text = objEntrenador.varProvincia;
                 lstDeporte.Text = Convert.ToString(objEntrenador.varDeportes);
                 txtCodigo.Enabled = false;
                 Habilitar();
@@ -50,7 +50,7 @@ namespace pryArlaBD
             txtCodigo.Text = "";
             txtApellido.Text = "";
             txtDireccion.Text = "";
-            lstProvincia.SelectedIndex = -1;
+            txtProvincia.Text = "";
             lstDeporte.SelectedIndex = -1;
         }
         private void Habilitar()
@@ -61,7 +61,7 @@ namespace pryArlaBD
             txtDireccion.Enabled = true;
             
             txtNombre.Enabled = true;
-            lstProvincia.Enabled = true;
+            txtProvincia.Enabled = true;
             lstDeporte.Enabled = true;
 
         }
@@ -92,6 +92,13 @@ namespace pryArlaBD
         {
             string varCodigo = txtCodigo.Text;
             clsEntrenador objEntrenador = new clsEntrenador();
+            objEntrenador.Modificar(varCodigo);
+            
+            objEntrenador.varNombre = txtNombre.Text;
+            objEntrenador.varApellido = txtApellido.Text;
+            objEntrenador.varDireccion = Convert.ToString(txtDireccion.Text);
+            objEntrenador.varProvincia = txtProvincia.Text;
+            objEntrenador.varDeportes = Convert.ToString(lstDeporte.Text);
             objEntrenador.Modificar(varCodigo);
             MessageBox.Show("Entrenador modificado");
             Limpiar();

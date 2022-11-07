@@ -157,7 +157,7 @@ namespace pryArlaBD
         {
             try
             {
-                string varSentenciaSQL = "UPDATE DEPORTISTA SET ([NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE]) WHERE ('" + varCodigoEntrenador + "'= [CODIGO DEPORTISTA])";
+                string varSentenciaSQL = "UPDATE ENTRENADORES SET NOMBRE= '" + varNombre + "',APELLIDO= '" + varApellido + "',DIRECCION= '" + varDireccion + "', PROVINCIA='" + varProvincia + "',DEPORTE='" + varDeporte + "' WHERE [CODIGO ENTRENADORES] = '" + parCDeportista + "'";
 
                 //conectamos base de datos 
                 objConexion.ConnectionString = varRuta;

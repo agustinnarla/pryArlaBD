@@ -228,6 +228,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(93, 20);
             this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // panel2
             // 

@@ -48,5 +48,10 @@ namespace pryArlaBD
         {
             this.Close();
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
     }
 }

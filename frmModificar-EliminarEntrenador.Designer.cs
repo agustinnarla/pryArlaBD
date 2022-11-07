@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.mrcDatos = new System.Windows.Forms.GroupBox();
+            this.txtProvincia = new System.Windows.Forms.TextBox();
             this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.lblDeporte = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.cmdEliminar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cmdModificar = new System.Windows.Forms.Button();
-            this.lblProvincia = new System.Windows.Forms.Label();
-            this.txtProvincia = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mrcDatos.SuspendLayout();
@@ -68,6 +68,15 @@
             this.mrcDatos.TabIndex = 4;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "Datos";
+            // 
+            // txtProvincia
+            // 
+            this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtProvincia.Enabled = false;
+            this.txtProvincia.Location = new System.Drawing.Point(130, 114);
+            this.txtProvincia.Name = "txtProvincia";
+            this.txtProvincia.Size = new System.Drawing.Size(147, 20);
+            this.txtProvincia.TabIndex = 15;
             // 
             // lstDeporte
             // 
@@ -96,6 +105,15 @@
             this.lblDeporte.Size = new System.Drawing.Size(45, 13);
             this.lblDeporte.TabIndex = 11;
             this.lblDeporte.Text = "Deporte";
+            // 
+            // lblProvincia
+            // 
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Location = new System.Drawing.Point(16, 114);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(54, 13);
+            this.lblProvincia.TabIndex = 9;
+            this.lblProvincia.Text = "Provincia ";
             // 
             // lblDireccion
             // 
@@ -126,6 +144,7 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Enabled = false;
             this.txtDireccion.Location = new System.Drawing.Point(130, 88);
             this.txtDireccion.Name = "txtDireccion";
@@ -134,6 +153,7 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.Enabled = false;
             this.txtApellido.Location = new System.Drawing.Point(130, 57);
             this.txtApellido.Name = "txtApellido";
@@ -142,6 +162,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(130, 26);
             this.txtNombre.Name = "txtNombre";
@@ -207,23 +228,6 @@
             this.cmdModificar.Text = "Modificar";
             this.cmdModificar.UseVisualStyleBackColor = true;
             this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
-            // 
-            // lblProvincia
-            // 
-            this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Location = new System.Drawing.Point(16, 114);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(54, 13);
-            this.lblProvincia.TabIndex = 9;
-            this.lblProvincia.Text = "Provincia ";
-            // 
-            // txtProvincia
-            // 
-            this.txtProvincia.Enabled = false;
-            this.txtProvincia.Location = new System.Drawing.Point(130, 114);
-            this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(147, 20);
-            this.txtProvincia.TabIndex = 15;
             // 
             // panel1
             // 

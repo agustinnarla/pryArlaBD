@@ -36,6 +36,7 @@ namespace pryArlaBD
                 txtProvincia.Text = objEntrenador.varProvincia;
                 lstDeporte.Text = Convert.ToString(objEntrenador.varDeportes);
                 txtCodigo.Enabled = false;
+                cmdConsultar.Enabled = false;
                 Habilitar();
             }
         }

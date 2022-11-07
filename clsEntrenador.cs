@@ -130,7 +130,7 @@ namespace pryArlaBD
         {
             try
             {
-                string varSentenciaSQL = "DELETE FROM DEPORTISTA WHERE ('" + parCodigoEntrenador + "'= [CODIGO DEPORTISTA])";
+                string varSentenciaSQL = "DELETE FROM ENTRENADORES WHERE ('" + parCodigoEntrenador + "'= [CODIGO DEPORTISTA])";
                 //conectamos base de datos 
                 objConexion.ConnectionString = varRuta;
                 objConexion.Open();
@@ -157,7 +157,7 @@ namespace pryArlaBD
         {
             try
             {
-                string varSentenciaSQL = "UPDATE ENTRENADORES SET NOMBRE= '" + varNombre + "',APELLIDO= '" + varApellido + "',DIRECCION= '" + varDireccion + "', PROVINCIA='" + varProvincia + "',DEPORTE='" + varDeporte + "' WHERE [CODIGO ENTRENADORES] = '" + parCDeportista + "'";
+                string varSentenciaSQL = "UPDATE ENTRENADORES SET NOMBRE= '" + varNombre + "',APELLIDO= '" + varApellido + "',DIRECCION= '" + varDireccion + "', PROVINCIA='" + varProvincia + "',DEPORTE='" + varDeporte + "' WHERE [CODIGO DEPORTISTA] = '" + parCDeportista + "'";
 
                 //conectamos base de datos 
                 objConexion.ConnectionString = varRuta;
@@ -172,13 +172,14 @@ namespace pryArlaBD
                 //ejecutamos la intruccion q nosotros le pedimos 
                 objComando.ExecuteNonQuery();
 
-                objConexion.Close();
+              
             }
             catch (Exception Mensajito)
             {
                 MessageBox.Show(Mensajito.Message);
                 //throw;
             }
+            objConexion.Close();
         }
     }
 }

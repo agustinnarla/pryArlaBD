@@ -47,6 +47,8 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.cmdConsultar = new System.Windows.Forms.Button();
             this.cmdEliminar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.mrcDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +87,7 @@
             this.mrcDatos.Controls.Add(this.txtDireccion);
             this.mrcDatos.Controls.Add(this.txtApellido);
             this.mrcDatos.Controls.Add(this.txtNombre);
-            this.mrcDatos.Location = new System.Drawing.Point(21, 78);
+            this.mrcDatos.Location = new System.Drawing.Point(22, 69);
             this.mrcDatos.Name = "mrcDatos";
             this.mrcDatos.Size = new System.Drawing.Size(302, 202);
             this.mrcDatos.TabIndex = 3;
@@ -253,6 +255,23 @@
             this.cmdEliminar.UseVisualStyleBackColor = true;
             this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(255, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(89, 330);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.Location = new System.Drawing.Point(-19, 268);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(363, 62);
+            this.panel2.TabIndex = 0;
+            // 
             // frmModificar_EliminarDeportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +284,8 @@
             this.Controls.Add(this.mrcDatos);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCodigoDeportista);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "frmModificar_EliminarDeportista";
             this.Text = "Modificar/Eliminar Deportista";
             this.Load += new System.EventHandler(this.frmModificar_Eliminar_Load);
@@ -296,5 +317,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button cmdConsultar;
         private System.Windows.Forms.Button cmdEliminar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

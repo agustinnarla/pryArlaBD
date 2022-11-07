@@ -31,6 +31,7 @@
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cmdCargar = new System.Windows.Forms.Button();
             this.mrcDatos = new System.Windows.Forms.GroupBox();
+            this.lstProvincia = new System.Windows.Forms.ComboBox();
             this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.lblDeporte = new System.Windows.Forms.Label();
             this.lblProvincia = new System.Windows.Forms.Label();
@@ -42,8 +43,11 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lstProvincia = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.mrcDatos.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdSalir
@@ -86,6 +90,40 @@
             this.mrcDatos.TabIndex = 3;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "Datos";
+            // 
+            // lstProvincia
+            // 
+            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstProvincia.FormattingEnabled = true;
+            this.lstProvincia.Items.AddRange(new object[] {
+            "Buenos Aires",
+            "Ciudad Autónoma de Buenos Aires",
+            "Catamarca",
+            "Chaco",
+            "Chubut",
+            "Córdoba",
+            "Corrientes",
+            "Entre Ríos",
+            "Formosa",
+            "Jujuy",
+            "La Pampa",
+            "La Rioja",
+            "Mendoza",
+            "Misiones",
+            "Neuquén",
+            "Río Negro",
+            "Salta",
+            "San Juan",
+            "San Luis",
+            "Santa Cruz",
+            "Santa Fe",
+            "Santiago del Estero",
+            "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+            "Tucumán"});
+            this.lstProvincia.Location = new System.Drawing.Point(130, 144);
+            this.lstProvincia.Name = "lstProvincia";
+            this.lstProvincia.Size = new System.Drawing.Size(147, 21);
+            this.lstProvincia.TabIndex = 15;
             // 
             // lstDeporte
             // 
@@ -191,39 +229,30 @@
             this.txtCodigo.Size = new System.Drawing.Size(93, 20);
             this.txtCodigo.TabIndex = 0;
             // 
-            // lstProvincia
+            // panel2
             // 
-            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstProvincia.FormattingEnabled = true;
-            this.lstProvincia.Items.AddRange(new object[] {
-            "Buenos Aires",
-            "Ciudad Autónoma de Buenos Aires",
-            "Catamarca",
-            "Chaco",
-            "Chubut",
-            "Córdoba",
-            "Corrientes",
-            "Entre Ríos",
-            "Formosa",
-            "Jujuy",
-            "La Pampa",
-            "La Rioja",
-            "Mendoza",
-            "Misiones",
-            "Neuquén",
-            "Río Negro",
-            "Salta",
-            "San Juan",
-            "San Luis",
-            "Santa Cruz",
-            "Santa Fe",
-            "Santiago del Estero",
-            "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
-            "Tucumán"});
-            this.lstProvincia.Location = new System.Drawing.Point(130, 144);
-            this.lstProvincia.Name = "lstProvincia";
-            this.lstProvincia.Size = new System.Drawing.Size(147, 21);
-            this.lstProvincia.TabIndex = 15;
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Location = new System.Drawing.Point(-10, 224);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(375, 62);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Location = new System.Drawing.Point(8, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(375, 62);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel3.Location = new System.Drawing.Point(251, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(122, 265);
+            this.panel3.TabIndex = 7;
             // 
             // frmRegistroEntrenador
             // 
@@ -233,10 +262,13 @@
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdCargar);
             this.Controls.Add(this.mrcDatos);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Name = "frmRegistroEntrenador";
             this.Text = "Registro Entrenador";
             this.mrcDatos.ResumeLayout(false);
             this.mrcDatos.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -258,5 +290,8 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.ComboBox lstProvincia;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

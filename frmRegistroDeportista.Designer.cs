@@ -45,6 +45,8 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.cmdCargar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.mrcDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,6 +169,7 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(127, 101);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(147, 20);
@@ -174,6 +177,7 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.Location = new System.Drawing.Point(127, 74);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(114, 20);
@@ -181,6 +185,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(127, 48);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(114, 20);
@@ -192,6 +197,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(79, 20);
             this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // cmdCargar
             // 
@@ -213,6 +219,22 @@
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Location = new System.Drawing.Point(250, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(89, 305);
+            this.panel1.TabIndex = 12;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.Location = new System.Drawing.Point(-14, 229);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(363, 73);
+            this.panel2.TabIndex = 11;
+            // 
             // frmRegistroDeportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,7 +243,10 @@
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdCargar);
             this.Controls.Add(this.mrcDatos);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "frmRegistroDeportista";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Deportista";
             this.Load += new System.EventHandler(this.frmRegistroDeportista_Load);
             this.mrcDatos.ResumeLayout(false);
@@ -249,5 +274,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button cmdCargar;
         private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

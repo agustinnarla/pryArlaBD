@@ -64,5 +64,11 @@ namespace pryArlaBD
         {
 
         }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

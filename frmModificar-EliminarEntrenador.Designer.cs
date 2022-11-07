@@ -45,6 +45,8 @@
             this.cmdModificar = new System.Windows.Forms.Button();
             this.lblProvincia = new System.Windows.Forms.Label();
             this.txtProvincia = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.mrcDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,6 +225,23 @@
             this.txtProvincia.Size = new System.Drawing.Size(147, 20);
             this.txtProvincia.TabIndex = 15;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(251, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(89, 313);
+            this.panel1.TabIndex = 11;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel2.Location = new System.Drawing.Point(1, 260);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(363, 73);
+            this.panel2.TabIndex = 1;
+            // 
             // frmModificar_EliminarEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +254,8 @@
             this.Controls.Add(this.mrcDatos);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCodigoEntrendador);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "frmModificar_EliminarEntrenador";
             this.Text = "Modificar/Eliminar Entrenador";
             this.Load += new System.EventHandler(this.frmModificar_EliminarEntrenador_Load);
@@ -264,5 +285,7 @@
         private System.Windows.Forms.Button cmdModificar;
         private System.Windows.Forms.TextBox txtProvincia;
         private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
